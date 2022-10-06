@@ -114,6 +114,8 @@ nav ul li {
 .hero img {
   height: 37.5rem;
   width: 37.5rem;
+  padding: 2rem;
+  border-radius: 10%;
 }
 
 .bio {
@@ -225,7 +227,7 @@ nav ul li {
 }
 
 .contact:hover {
-  background-color: #ffc9ae6c;
+  background-color: #ffc5a96c;
 
 }
 
@@ -322,7 +324,7 @@ nav ul li {
 
 /* Footer section */
 footer {
-  background-color: var(--bg-color);
+  background-color: rgba(128, 128, 128, 0.137);
   padding: 1.25rem;
   text-align: center;
   /* margin: 2rem 0 0; */
@@ -387,7 +389,7 @@ footer {
   }
 
   .bio {
-    margin-top: -7rem;
+    margin-top: 2.5rem;
     width: 20.5rem;
   }
 
