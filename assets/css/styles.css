@@ -11,7 +11,7 @@
   --navbar-color: #ADD8E6;
   --header-text-color: rgba(254, 254, 254, 0.93);
   --secondary-color: #d0ecf6;
-   /* #df68ef; */
+  --mouseover-link-color: #df68ef;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #638c9775;
   --bottom-margin: 0.5rem;
@@ -65,6 +65,7 @@ nav {
   padding: 1.5rem 3.5rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   background-color: var(--navbar-color);
+  border-radius: 0px  0px 10px 10px;
   
 }
 
@@ -186,6 +187,11 @@ nav ul li {
   height: 60%;
 }
 
+.project-link:hover {
+  color: var(--mouseover-link-color);
+  border-bottom: 2px solid var(--mouseover-link-color);
+}
+
 .projects-container {
   display: flex;
   align-items: center;
@@ -212,6 +218,7 @@ nav ul li {
 }
 
 .project-details {
+  text-align: left;
   margin-bottom: var(--bottom-margin);
 }
 

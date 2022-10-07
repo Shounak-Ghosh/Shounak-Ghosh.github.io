@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicons/favicon-32x32.png" />
 
   <!-- Animate CSS CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -36,15 +36,14 @@
 
   <!-- Hero Section -->
   <section class="hero" id="about">
-    <img src="assets/images/hero_img.jpg" alt="intro-img" loading="lazy"
-      title = "A picture of me in Hawaii!"
+    <img src="assets/images/hero_img.jpg" alt="intro-img" loading="lazy" title="A picture of me in Hawaii!"
       style="background-color:#FFFFFF;color:#000000;text-decoration:none"
       class="hero-img animate__animated animate__backInDown " />
-      
+
     <div class="bio animate__animated animate__backInDown">
       <h2 class="bio-title">About Me</h2>
       <p class="bio-text">
-        Hi! I’m a first-year CS Major at NYU's Tandon School of Engineering. 
+        Hi! I’m a first-year CS Major at NYU's Tandon School of Engineering.
         I'm passionate using technology to create intuitive solutions that provide a more
         inclusive, human experience for all.
       </p>
@@ -58,21 +57,29 @@
   <section class="more-about" id="more-about">
     <h2>More About Me</h2>
     <p>
-      I have over 5 years of programming experience in both academic and industrial contexts, primarly in Python Java, and C++. 
+      I have over 5 years of programming experience in both academic and industrial contexts, primarly in Python Java,
+      and C++.
       I have also used HTML, CSS, and React.js to create front-end web applications for company and personal projects.
-      Currently, I'm studying Data Structures, Algorithms, Object-Oriented Programming, Data Analysis, and Discrete Math, all which are required for my major.
+      Currently, I'm studying Data Structures, Algorithms, Object-Oriented Programming, Data Analysis, and Discrete
+      Math, all which are required for my major.
     </p>
     <p>
-      I'm also a part of Robomasters Ultraviolet: NYU's robotics team that designs three robots geared towards competive play (notable adversaries include UW's Advanced Robotics and Texas A&M's Aimbot Robotics teams).
-      Each year, three robots (known as the Standard, Hero and Sentry) are desiged that are capable of launching 17mm plastic projectiles at high speeds with significant accuracy. Specifically, I'm a part of the 
-      computer vision team, working on our fully autonomous robot (the Sentry). We use Intel's RealSense camera, OpenCV, and YOLOv5 (running on a Jetson Nano) for real-time object detection. 
-      Geometric transformations are used to calculate the distance and angle of the target, which is then used to control the robot's movement and firing speed.
+      I'm also a part of Robomasters Ultraviolet: NYU's robotics team that designs three robots geared towards competive
+      play (notable adversaries include UW's Advanced Robotics and Texas A&M's Aimbot Robotics teams).
+      Each year, three robots (known as the Standard, Hero and Sentry) are desiged that are capable of launching 17mm
+      plastic projectiles at high speeds with significant accuracy. Specifically, I'm a part of the
+      computer vision team, working on our fully autonomous robot (the Sentry). We use Intel's RealSense camera, OpenCV,
+      and YOLOv5 (running on a Jetson Nano) for real-time object detection.
+      Geometric transformations are used to calculate the distance and angle of the target, which is then used to
+      control the robot's movement and firing speed.
     </p>
     <p>
-      When I'm not coding, I enjoy photography, the oudoors, and being active in any way possible (rock climbing, hitting the gym, Ultimate Frisbee ... the list could go on for a while). 
-      I also share a project car (a 2001 Mazda Miata MX-5 NB) with a couple friends from my hometown. 
-      Currently, we've installed a removable steering wheel, cold air intake, an upgraded exhaust that can switch to and from straight piped at the press of a key fob, and custom fitted bucket seats. 
-      Hopefully, we can turbo it soon and get it on a track! 
+      When I'm not coding, I enjoy photography, the oudoors, and being active in any way possible (rock climbing,
+      hitting the gym, Ultimate Frisbee ... the list could go on for a while).
+      I also share a project car (a 2001 Mazda Miata MX-5 NB) with a couple friends from my hometown.
+      Currently, we've installed a removable steering wheel, cold air intake, an upgraded exhaust that can switch to and
+      from straight piped at the press of a key fob, and custom fitted bucket seats.
+      Hopefully, we can turbo it soon and get it on a track!
     </p>
   </section>
 
@@ -100,32 +107,53 @@
     <h2 class="projects-title">Some of my Recent Projects</h2>
     <div class="projects-container">
       <div class="project-container project-card">
-        <img src="assets/images/expenseTracker.png" alt="expense-tracker" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Expense Tracker</h3>
+        <img src="assets/images/glasses.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+        <h3 class="project-title">BetterView Glasses</h3>
         <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
+          For my Intro to Engineering Design course, I worked with a team of 4 to design a pair of assistive glasses for
+          the visually impaired.
+        </p>
+        <p class="project-details">
+          The frames were modeled in Fusion360 and 3D printed. Ultrasonic sensors were then mounted and used to detect
+          the distance and angle of of in front of the user. This information was then transmitted to a pair of Bluetooth headphones.
+          I wrote the Arduino code (similar to C++) for the ultrasonic sensors and the Bluetooth module.
+        </p>
+        <p>
+          <br> <br> <br> <br> <br>
         </p>
         <a href="#" target="_blank" class="project-link">Check it Out</a>
       </div>
       <div class="project-container project-card">
-        <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Netflix Clone</h3>
+        <img src="assets/images/oloid_logo.png" alt="netflic-clone" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Card Reader Classifier</h3>
         <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
+          Oloid is a contactless-tracing startup based in the Silicon Valley.
+          As a software intern this past summer, I was tasked with creating a RFID card reader classifier for easily
+          identifying the specific make and model of a badge scanner.
+        <p class="project-details">
+          I creating a Tensorflow pipeline with dropout regularization to reduce overfitting. I also used
+          data autotuning and data augmentation to improve the model's accuracy. I then used React.js to create a
+          front-end web application that allows users to upload images of RFID card readers and receive a prediction in
+          real-time.
+        </p>
         </p>
         <a href="#" target="_blank" class="project-link">Check it Out</a>
       </div>
       <div class="project-container project-card">
-        <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Greeny Earth</h3>
+        <img src="assets/images/discord_logo.png" alt=greeny-earth" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Yupper Bot</h3>
         <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
+          Robomasters offered extra credit for sending a message every day (a "Yupper" emote) in the RMNA Discord
+          server.
+          Their goal was to increase engagement activity in the server and ultimately allow them offically partner the
+          server with Discord.
+        </p>
+        <p class="project-details">
+          I created a Python script that accessed the Discord API and sent a Yupper in the specified server and channel
+          when run. I then used crontab to schedule the script to run daily.
+        </p>
+        <p>
+          <br> <br> <br> <br> <br>
         </p>
         <a href="#" target="_blank" class="project-link">Check it Out</a>
       </div>
