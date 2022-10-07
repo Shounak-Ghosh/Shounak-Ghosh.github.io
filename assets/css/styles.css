@@ -10,7 +10,7 @@
   --primary-color: #4756df;
   --navbar-color: #add8e6c8;
   --header-text-color: rgba(254, 254, 254, 0.93);
-  --secondary-color: #d0ecf6;
+  --secondary-color: #23baf15f;
   --mouseover-link-color: #df68ef;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #638c9775;
@@ -19,6 +19,7 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
+
 /* Variables end */
 
 html {
@@ -65,8 +66,7 @@ nav {
   padding: 1.5rem 3.5rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   background-color: var(--navbar-color);
-  border-radius: 0px  0px 10px 10px;
-  
+  border-radius: 0px 0px 10px 10px;
 }
 
 
@@ -78,9 +78,10 @@ nav a {
   color: var;
   transition: var(--transition);
 }
+
 nav a:hover {
-  color: var(--header-text-color);
-  border-bottom: 2px solid var(--header-text-color);
+  color: purple;
+  border-bottom: 2px solid purple;
 }
 
 nav ul {
@@ -100,6 +101,7 @@ nav ul li {
   cursor: pointer;
   display: none;
 }
+
 /* Navbar ends */
 
 /* Hero section */
@@ -110,22 +112,19 @@ nav ul li {
   gap: 2.5rem;
   /* max-width: 68.75rem; */
   margin: auto;
-  /* background: greenyellow; */
-  
+
 }
 
 .hero-bg {
-  animation:slide 3s ease-in-out infinite alternate;
+  animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-  
-  left:-50%;
-  opacity:.5;
-  position:absolute;
-  right:-50%;
-  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: absolute;
+  right: -50%;
   top: 0;
-  
-  z-index:-1;
+  bottom: 241px;
+  z-index: -1;
 }
 
 .hero-bg2 {
@@ -139,13 +138,13 @@ nav ul li {
 
 @keyframes slide {
   0% {
-    transform:translateX(-25%);
+    transform: translateX(-25%);
   }
+
   100% {
-    transform:translateX(25%);
+    transform: translateX(25%);
   }
 }
-
 
 .hero img {
   height: 37.5rem;
@@ -160,7 +159,7 @@ nav ul li {
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
-  background-color: var(--bg-color);
+  background-color:rgba(255, 255, 255, 0.573);
   background-clip: border-box;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
@@ -173,12 +172,18 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
+
 /* Hero section ends */
 
 /* More about */
 .more-about {
-  background-color: var(--bg-color);
+  background: linear-gradient(#f47261ce 0 0) var(--ma,0%) / var(--ma,0%) no-repeat;
+  transition: .4s,background-position 0s;
   padding: 1rem 6rem;
+}
+
+.more-about:hover {
+  --ma: 100%;
 }
 
 .more-about h2 {
@@ -190,14 +195,24 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.4rem;
 }
+
 /* More about ends */
 
 /* Skills section */
 .skills {
-  max-width: 68.75rem;
   margin: auto;
   text-align: center;
-  margin-top: 2.5rem;
+  padding: 1rem 6rem;
+  --c: no-repeat linear-gradient(#6c5cc4ab 0 0);
+  background: 
+    var(--c) calc(-100% + var(--p, 0%)) 100% / 50% var(--p, .08em),
+    var(--c) calc( 200% - var(--p, 0%)) 0    / 50% var(--p, .08em);
+  transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
+}
+
+.skills:hover {
+  --p: 100%;
+  --t: .3s;
 }
 
 .skill-header {
@@ -212,19 +227,18 @@ nav ul li {
   width: 11.875rem;
   height: 11.25rem;
 }
+
 /* Skills section ends */
 
 /* Projects section */
 .projects {
-  background: linear-gradient(#dfef06c3 0% 0%) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+  background: linear-gradient(#dfef06b8 0% 0%) calc(100% - var(--p, 0%)) / var(--p, 0%) no-repeat;
   transition: .4s, background-position 0s;
   padding: 32px 0;
-  margin-top: 2rem;
 }
 
 .projects:hover {
   --p: 100%;
-  /* background-color: var(--secondary-color); */
 }
 
 .project-pic {
@@ -232,12 +246,12 @@ nav ul li {
   height: 60%;
 }
 
-.project-link{
-  background: linear-gradient(var(--navbar-color) 0% 0%) calc(100% - var(--l,0%)) / var(--l,0%) no-repeat;
+.project-link {
+  background: linear-gradient(var(--secondary-color) 0% 0%) calc(100% - var(--l, 0%)) / var(--l, 0%) no-repeat;
   transition: .4s, background-position 0s;
   font-size: 1.5rem;
   border-bottom: 2px solid var(--primary-color);
-  
+
 }
 
 .project-link:hover {
@@ -283,8 +297,7 @@ nav ul li {
   /* margin-top: 2rem; */
   padding: 1rem 6rem;
   background-color: #f4f4f4;
-  transition: background-color 0.3s
-  ease-out 100ms
+  transition: background-color 0.3s ease-out 100ms
 }
 
 .contact:hover {
@@ -331,7 +344,7 @@ nav ul li {
 }
 
 .input-field::placeholder {
-  padding:0px;
+  padding: 0px;
   color: var(--primary-color);
 }
 
@@ -352,6 +365,7 @@ nav ul li {
   border: 2px solid var(--secondary-color);
   cursor: pointer;
 }
+
 /* Contacts section ends */
 
 /* Social buttons */
@@ -367,6 +381,7 @@ nav ul li {
   width: 2rem;
   height: 2rem;
 }
+
 /* Social button ends */
 
 /* Scroll to top button */
@@ -381,6 +396,7 @@ nav ul li {
   width: 3rem;
   height: 3rem;
 }
+
 /* Scroll to top button ends */
 
 /* Footer section */
@@ -390,6 +406,7 @@ footer {
   text-align: center;
   /* margin: 2rem 0 0; */
 }
+
 /* Footer section ends */
 
 /* General (utilities) */
@@ -414,6 +431,7 @@ footer {
   nav {
     padding: 1.5rem 1rem;
   }
+
   nav ul {
     position: fixed;
     background-color: var(--bg-color);

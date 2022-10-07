@@ -29,3 +29,7 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+window.onload = function() {
+  document.body.className += " loaded";
+}
