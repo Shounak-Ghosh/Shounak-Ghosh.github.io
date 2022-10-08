@@ -1,0 +1,36 @@
+{
+  "name": "personal-website",
+  "version": "1.0.1",
+  "private": "true",
+  "description": "my personal portfolio website",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "deploy": "npm run build && gh-pages -d dist -b main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shounak-Ghosh/Shounak-Ghosh.github.io.git"
+  },
+  "keywords": [],
+  "author": "Shounak Ghosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shounak-Ghosh/Shounak-Ghosh.github.io/issues"
+  },
+  "homepage": "https://github.com/Shounak-Ghosh/Shounak-Ghosh.github.io/tree/deploy#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.0.1",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.1.3",
+    "bootstrap-scss": "^5.2.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "vanilla-tilt": "^1.7.2"
+  }
+}
