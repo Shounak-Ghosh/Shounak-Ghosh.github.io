@@ -5,6 +5,10 @@ All code in relation to my personal website.
 Things to do:
 - Re read all text and cut all unnecessary words
 - Change color gradient of background (blue)
+- Add gradients to special words eg. Python, C++, Jetson
+- add links to finished resume
+- add links to projects
+
 
 
 Useful Resources (v1):
