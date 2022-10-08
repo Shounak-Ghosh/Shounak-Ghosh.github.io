@@ -1,24 +1,25 @@
 {
-  "name": "simplefolio",
+  "name": "personal-website",
   "version": "1.0.1",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "my personal portfolio website",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "deploy": "npm run build && gh-pages -d dist -b main"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobidev/simplefolio"
+    "url": "git+https://github.com/Shounak-Ghosh/Shounak-Ghosh.github.io.git"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
-  "license": "ISC",
+  "author": "Shounak Ghosh",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cobidev/simplefolio/issues"
+    "url": "https://github.com/Shounak-Ghosh/Shounak-Ghosh.github.io/issues"
   },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
+  "homepage": "https://github.com/Shounak-Ghosh/Shounak-Ghosh.github.io/tree/deploy#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.0.1",
@@ -30,5 +31,6 @@
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "vanilla-tilt": "^1.7.2"
-  }
+  },
+  "main": "index.js"
 }
