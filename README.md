@@ -3,8 +3,11 @@ All code in relation to my personal website.
 
 
 Things to do:
-- Update socicons 
-    - Static icons but animated on hover
+- Re read all text and cut all unnecessary words
+- Change color gradient of background (blue)
+
+
+Useful Resources (v1):
 
 Background hover effects: https://css-tricks.com/cool-hover-effects-using-background-properties/
 Link hover effects:  https://css-tricks.com/css-link-hover-effects/
