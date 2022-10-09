@@ -10409,7 +10409,7 @@ textarea.form-control-lg {
 
 1em = 16px
 
-ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
+ORDER: Base + Typography > General Layout + Grid > Page Layout > Components
 
 */
 .mb-8 {
@@ -10604,6 +10604,7 @@ a:hover {
 .footer__text {
   color: gray;
   font-size: 1.3rem;
+  z-index: 2;
 }
 .footer__text a {
   color: gray;
@@ -10782,7 +10783,6 @@ section {
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: #333333;
   font-weight: 400;
   color: #fff;
   padding: 0rem 5.6rem;
@@ -10792,9 +10792,6 @@ section {
   bottom: 0;
   right: 0;
   z-index: -1;
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
 }
 @media (max-width: 37.5em) {
   #hero {
@@ -10806,6 +10803,8 @@ section {
   font-weight: 700;
   margin-bottom: 3.2rem;
   text-align: left;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 75em) {
   #hero .hero-title {
@@ -10844,6 +10843,16 @@ section {
   #hero .hero-cta a {
     font-size: 2rem;
   }
+}
+#particles-js {
+  background-color: #333333;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
 }
 #projects {
   background-color: #333333;
