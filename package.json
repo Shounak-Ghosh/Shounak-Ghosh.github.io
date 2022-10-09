@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "deploy": "npm run build && gh-pages -d dist -b deploy"
+    "deploy": "npm run build && gh-pages -d dist -b static-page"
   },
   "repository": {
     "type": "git",
