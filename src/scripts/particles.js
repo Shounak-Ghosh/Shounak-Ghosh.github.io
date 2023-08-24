@@ -1,10 +1,15 @@
-import initScrollReveal from "./scripts/scrollReveal";
-import initTiltEffect from "./scripts/tiltAnimation";
-import { targetElements, defaultProps } from "./data/scrollRevealConfig";
-import particlesJS from "particles.js";
+/* -----------------------------------------------
+/* How to use? : Check the GitHub README
+/* ----------------------------------------------- */
 
-initScrollReveal(targetElements, defaultProps);
-initTiltEffect();
+/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded - callback');
+});
+*/
+
+/* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
   
@@ -14,11 +19,11 @@ particlesJS('particles-js',
         "value": 80,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 400
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#9364de"
       },
       "shape": {
         "type": "circle",
@@ -58,17 +63,17 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#3291a8",
         "opacity": 0.4,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 2,
         "direction": "none",
         "random": false,
         "straight": false,
-        "out_mode": "out",
+        "out_mode": "bounce",
         "attract": {
           "enable": false,
           "rotateX": 600,
