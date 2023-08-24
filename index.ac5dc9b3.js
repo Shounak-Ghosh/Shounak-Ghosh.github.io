@@ -27,7 +27,7 @@
             shape: {
                 type: 'circle',
                 stroke: {
-                    width: 10,
+                    width: 0,
                     color: '#ff0000'
                 },
                 polygon: {
@@ -68,7 +68,7 @@
             },
             move: {
                 enable: true,
-                speed: 0.5,
+                speed: 2,
                 direction: 'none',
                 random: false,
                 straight: false,
