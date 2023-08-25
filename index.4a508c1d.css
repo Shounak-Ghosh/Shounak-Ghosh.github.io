@@ -10791,6 +10791,7 @@ section {
   bottom: 0;
   right: 0;
   z-index: -1;
+  position: sticky;
 }
 @media (max-width: 37.5em) {
   #hero {
