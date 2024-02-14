@@ -8,6 +8,7 @@ Things to do:
 - Add gradients to special words eg. Python, C++, Jetson
 - add links to finished resume
 - add links to projects
+- Issue with initial site button (changed to Scroll for More)
 
 
 
