@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 
 function TypeWriterComponent() {
+  const typewriterRef = useRef(null);
+  const [maxHeight, setMaxHeight] = useState('auto');
+
+  useEffect(() => {
+    const adjustMaxHeight = () => {
+      if (typewriterRef.current) {
+        setMaxHeight(typewriterRef.current.scrollHeight);
+      }
+    };
+
+    adjustMaxHeight();
+    window.addEventListener('resize', adjustMaxHeight);
+
+    return () => {
+      window.removeEventListener('resize', adjustMaxHeight);
+    };
+  }, []);
+
   return (
-    <div className="flex items-center flex-wrap justify-center">
-      <div className="inline-flex">
+    <div
+      className="flex items-center flex-wrap justify-center"
+      style={{ maxHeight }}
+    >
+      <div ref={typewriterRef} className="inline-flex">
         <Typewriter
           options={{
             strings: [
