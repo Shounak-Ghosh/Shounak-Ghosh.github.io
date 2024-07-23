@@ -2,16 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shounak Ghosh - Personal website showcasing projects, blog, and more.">
+    <meta name="keywords" content="Shounak Ghosh, personal website, projects, blog">
+    <meta name="author" content="Shounak Ghosh">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Shounak Ghosh">
+    <meta property="og:description" content="Personal website showcasing projects, blog, and more.">
+    <!-- <meta property="og:image" content="URL_to_image"> -->
+    <meta property="og:url" content="https://shounak-ghosh.github.io/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <!-- <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shounak Ghosh">
+    <meta name="twitter:description" content="Personal website showcasing projects, blog, and more.">
+    <meta name="twitter:image" content="URL_to_image"> -->
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://shounak-ghosh.github.io/">
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shounak Ghosh</title>
+
+    <title>Shounak Ghosh - Personal Website</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shounak Ghosh",
+        "url": "https://shounak-ghosh.github.io/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shounak-ghosh",
+          "https://github.com/Shounak-Ghosh",
+          <!-- "https://twitter.com/shounak-ghosh" -->
+        ],
+        "jobTitle": "Software Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Procyon.ai"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "New York University"
+        }
+      }
+    </script>
+
+    <style>
+      body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+      }
+      body.light-mode {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    </style>
     <script type="module" crossorigin src="/assets/index-CiSjq-kF.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DfQH_lMz.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      function applyTheme(theme) {
+        document.body.classList.remove('light-mode', 'dark-mode');
+        document.body.classList.add(`${theme}-mode`);
+      }
+
+      const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      applyTheme(prefersDarkScheme ? 'dark' : 'light');
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        applyTheme(e.matches ? 'dark' : 'light');
+      });
+    </script>
   </body>
 </html>
