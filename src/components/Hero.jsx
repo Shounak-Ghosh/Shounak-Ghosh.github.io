@@ -34,7 +34,7 @@ const Hero = () => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="text-3xl whitespace-nowrap"
+              className="text-3xl"
             >
               <TypeWriterComponent />
             </motion.p>

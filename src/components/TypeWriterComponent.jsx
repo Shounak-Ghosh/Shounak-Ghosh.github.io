@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 function TypeWriterComponent() {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center flex-wrap justify-center">
       <div className="inline-flex">
         <Typewriter
           options={{
