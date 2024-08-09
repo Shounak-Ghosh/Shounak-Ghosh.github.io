@@ -5,7 +5,7 @@ import vertex_ai from "../assets/projects/vertexai.jpg";
 import glasses from "../assets/projects/glasses.png";
 import plane from "../assets/projects/plane_icon.jpg";
 
-export const HERO_CONTENT = `I have over 5 years of programming experience in both academic and industrial contexts, primarly in Python, Java, and C++. I have also used HTML, CSS, and React.js to create front-end web applications for company and personal projects. Currently, I'm studying Data Structures, Algorithms, Object-Oriented Programming, Data Analysis, and Discrete Math.`;
+export const HERO_CONTENT = `I have over 5 years of programming experience in both academic and industrial contexts, primarily in Python, Java, and C++. I have also used HTML, CSS, and React.js to create front-end web applications for company and personal projects. Currently, I'm studying Data Structures, Algorithms, Object-Oriented Programming, Data Analysis, and Discrete Math.`;
 
 export const ABOUT_TEXT_P1 = `I'm also a part of Robomasters Ultraviolet: NYU's robotics team that designs three robots geared towards competive play. Specifically, I'm a part of the computer vision team, working on our fully autonomous robot (the Sentry). We use Intel's RealSense camera, OpenCV, and YOLOv5 (running on a Jetson Nano) for real-time object detection. Geometric transformations are used to calculate the distance and angle of the target, which is then used to control the robot's movement and firing speed.`;
 export const ABOUT_TEXT_P2 = `When I'm not coding, I enjoy photography, the outdoors, and being active in any way possible. I also share a project car (a 2001 Mazda Miata MX-5 NB) with a couple friends from my hometown. Currently, we've installed a removable steering wheel, cold air intake, a straight-piped exhaust, and custom fitted bucket seats. Hopefully, we can turbo it soon and get it on a track!`;
@@ -14,8 +14,15 @@ export const EXPERIENCES = [
     year: "May 2024 - Present",
     role: "Software Engineering Intern",
     company: "Procyon.ai",
-    description: `Created LLM agent architecture and prompt interface for querying multi-tenant Procyon User Activity Logs. Leveraged Amazon Bedrock Foundational Model access, AWS Lambda, EC2 and OpenSearch data indexing. Offered advanced capabilities including summarization, proactive monitoring, and data visualization.`,
+    description: `Created LLM agent architecture and prompt interface for querying multi-tenant Procyon User Activity Logs. Leveraged Amazon Bedrock Foundational Model access, AWS Lambda, EC2 and OpenSearch data indexing. Provided scalable integration into production workflow using Go and Ansible.`,
     technologies: ["Python", "Go", "AWS", "Ansible"],
+  },
+  {
+    year: "May 2024 - Present",
+    role: "Software Engineering Intern",
+    company: "Portal26",
+    description: `Augmented Cloudwatch alarm monitoring with custom metrics and notification system. Queried logs for additional error details and provided real-time Slack and email messages via SNS. Built Terraform scripting for AWS infrastructure and CI/CD pipeline deployment. `,
+    technologies: ["Python", "AWS", "Terraform"],
   },
   {
     year: "May 2023 - Aug 2023",

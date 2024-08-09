@@ -17,7 +17,7 @@ const ShakeIcon = ({ Icon, className = "" }) => {
       onHoverStart={handleHover}
       animate={shake ? { rotate: [0, -10, 10, -10, 10, 0] } : {}}
       transition={{ duration: 0.5 }}
-      className={`cursor-pointer ${className}`}
+      className={`${className}`}
     >
       <div className="rounded-2xl border-4 border-neutral-800 p-4"><Icon /></div>
     </motion.div>
