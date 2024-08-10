@@ -21,7 +21,7 @@ export const EXPERIENCES = [
     year: "May 2024 - Present",
     role: "Software Engineering Intern",
     company: "Portal26",
-    description: `Augmented Cloudwatch alarm monitoring with custom metrics and notification system. Queried logs for additional error details and provided real-time Slack and email messages via SNS. Built Terraform scripting for AWS infrastructure and CI/CD pipeline deployment. `,
+    description: `Augmented CloudWatch alarm monitoring with custom metrics and notification system. Queried logs for additional error details and provided real-time Slack and email messages via SNS. Built Terraform scripting for AWS infrastructure and CI/CD pipeline deployment. `,
     technologies: ["Python", "AWS", "Terraform"],
   },
   {
