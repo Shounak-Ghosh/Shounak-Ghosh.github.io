@@ -18,7 +18,7 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+    <div className=" pb-4 lg:mb-35">
       <div className="flex flex-wrap ">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-            <Tilt tiltAxis="y" tiltMaxAngleY={10} >
+            <Tilt tiltAxis="y" tiltMaxAngleY={10}>
               <motion.img
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}

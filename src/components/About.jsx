@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 
 const About = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className=" pb-4">
       <h1 className="my-20 text-center text-4xl font-medium">
         About <span className="text-purple-400">Me</span>
       </h1>
@@ -35,7 +35,7 @@ const About = () => {
           className="w-full lg:w-1/2"
         >
           <div className="flex justify-center lg:justify-start">
-            <div className="my-2 max-w-xl py-6">
+            <div className="my-2 max-w-xl py-4">
               <p className="my-2">{ABOUT_TEXT_P1}</p>
               <p>{ABOUT_TEXT_P2}</p>
             </div>

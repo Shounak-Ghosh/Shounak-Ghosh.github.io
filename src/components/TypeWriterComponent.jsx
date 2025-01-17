@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 function TypeWriterComponent() {
   const typewriterRef = useRef(null);
-  const [maxHeight, setMaxHeight] = useState('auto');
+  const [maxHeight, setMaxHeight] = useState("auto");
 
   useEffect(() => {
     const adjustMaxHeight = () => {
@@ -13,10 +13,10 @@ function TypeWriterComponent() {
     };
 
     adjustMaxHeight();
-    window.addEventListener('resize', adjustMaxHeight);
+    window.addEventListener("resize", adjustMaxHeight);
 
     return () => {
-      window.removeEventListener('resize', adjustMaxHeight);
+      window.removeEventListener("resize", adjustMaxHeight);
     };
   }, []);
 
@@ -36,14 +36,14 @@ function TypeWriterComponent() {
             ],
             autoStart: true,
             loop: true,
-            deleteSpeed: 'natural',
-            delay: 'natural'
+            deleteSpeed: "natural",
+            delay: "natural",
           }}
         />
       </div>
       <div className="inline-flex">
         <p>
-          at {" "}
+          at{" "}
           <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">
             NYU Tandon
           </span>

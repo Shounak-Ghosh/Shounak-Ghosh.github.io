@@ -7,7 +7,7 @@ import { FaJava } from "react-icons/fa6";
 import { FaAws } from "react-icons/fa6";
 import { SiMysql } from "react-icons/si";
 import { SiTensorflow } from "react-icons/si";
-import {CgCPlusPlus} from "react-icons/cg";
+import { CgCPlusPlus } from "react-icons/cg";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -28,14 +28,14 @@ const iconVariants = (duration) => ({
 
 const Skills = () => {
   return (
-    <div className="border-b border-neutral-800 pb-20">
+    <div className=" pb-20">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl font-medium"
       >
-       <span className="text-purple-400">Technical</span> Skills
+        <span className="text-purple-400">Technical</span> Skills
       </motion.h1>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
@@ -86,7 +86,7 @@ const Skills = () => {
           />
         </div>
         <div className=" p-4 flex items-center justify-center">
-        <ShakeIcon
+          <ShakeIcon
             Icon={RiReactjsLine}
             className="text-7xl text-cyan-600 hover:text-cyan-400"
           />

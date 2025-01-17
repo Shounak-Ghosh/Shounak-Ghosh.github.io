@@ -12,7 +12,7 @@ const Navbar = () => {
         <motion.span
           initial={{ width: 0, overflow: "hidden" }}
           animate={{ width: "auto" }}
-          transition={{delay: 1, duration: 1 }}
+          transition={{ delay: 1, duration: 1 }}
           className="text-3xl text-purple-400 font-semibold"
         >
           SG

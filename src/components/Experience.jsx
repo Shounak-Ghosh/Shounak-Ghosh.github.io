@@ -1,9 +1,8 @@
 import { EXPERIENCES } from "../constants";
 import { motion } from "framer-motion";
-
 const Experience = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className=" pb-4">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -30,10 +29,17 @@ const Experience = () => {
               className="w-full max-w-xl lg:w-3/4"
             >
               <h6 className="mb-2 font-semibold">
-                <span className="text-md">{experience.role} - </span>
-                <span className="  text-purple-100">{experience.company}</span>
+                <span className="text-md text-neutral-200 lg:whitespace-nowrap">
+                  {experience.role} -{" "}
+                </span>
+                <span className="text-purple-100 lg:whitespace-nowrap">
+                  {experience.company}
+                </span>
+                <span className="block lg:inline lg:whitespace-nowrap text-neutral-400 lg:ml-2">
+                  {experience.company_description}
+                </span>
               </h6>
-              <p className="mb-4 text-neutral-400">{experience.description}</p>
+              <p className="mb-4 text-neutral-300">{experience.description}</p>
               {experience.technologies.map((tech, index) => (
                 <motion.span
                   key={index}

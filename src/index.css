@@ -8,3 +8,41 @@
   font-family: "Inter", sans-serif;
 }
 
+img {
+  user-select: none; /* Prevent text/image selection */
+  -webkit-user-drag: none; /* Prevent dragging in WebKit browsers */
+  pointer-events: none; /* Disable pointer events if interaction is not needed */
+}
+
+body {
+  user-select: none; /* Disable selection by default */
+  background-color: #1e1e2f; /* Set a global background color for the body */
+}
+
+p, span, h1, h2, h3 {
+  user-select: text; /* Allow selection for these elements */
+}
+
+/* Global scrollbar customization for WebKit browsers */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1e1e2f; /* Match the background color of the body */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a1a1a1; /* Light gray for the thumb */
+  border-radius: 4px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888888; /* Slightly darker gray on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-color: #a1a1a1 #1e1e2f; /* Light gray thumb, dark track */
+  scrollbar-width: thin; /* Thin scrollbar */
+}

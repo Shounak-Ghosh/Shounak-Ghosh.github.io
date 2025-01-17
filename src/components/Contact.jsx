@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-900 pb-20">
+    <div className=" pb-20">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -28,11 +28,10 @@ const Contact = () => {
           transition={{ duration: 1 }}
           className="my-4"
         >
-          <a href= {CONTACT.emailHref}  className="border-b">
-          {CONTACT.email}
-        </a>
+          <a href={CONTACT.emailHref} className="border-b">
+            {CONTACT.email}
+          </a>
         </motion.p>
-        
       </div>
     </div>
   );
