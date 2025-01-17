@@ -95,9 +95,7 @@ export const PROJECTS = [
     title: "Computer Architecture",
     image: x86,
     description:
-      "Developed a C++ simulator for the E20 processor to execute machine and assembly code, ensuring accurate
-output formatting for automated evaluation.
-.",
+      "Developed a C++ simulator for the E20 processor to execute machine and assembly code, ensuring accurate output formatting for automated evaluation.",
     technologies: ["C++", "Verilog"],
   },
   {
