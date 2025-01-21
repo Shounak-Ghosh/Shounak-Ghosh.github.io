@@ -92,11 +92,11 @@ export const PROJECTS = [
     technologies: ["Python", "Flask", "HTML", "CSS", "JS", "mySQL"],
   },
   {
-    title: "Computer Architecture",
+    title: "Computer Architecture E20 Processor Simulator",
     image: x86,
     description:
-      "Developed a C++ simulator for the E20 processor to execute machine and assembly code, ensuring accurate output formatting for automated evaluation.",
-    technologies: ["C++", "Verilog"],
+      "Developed a C++ simulator for the E20 processor to execute machine and assembly code, ensuring accurate output formatting for automated evaluation. Implemented multi-level L1 and L2 cache systems to enhance memory access performance and simulate realistic processor behavior. Conducted rigorous testing by creating and validating custom test cases, and integrated an external assembler to support assembly-to-machine code conversion.",
+    technologies: ["C++", "Verilog", "Assembly"],
   },
   {
     title: "Celebrity Face Detection",

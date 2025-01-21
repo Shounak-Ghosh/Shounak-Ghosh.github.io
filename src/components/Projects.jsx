@@ -16,7 +16,7 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }} // Need to keep x:0 for lg screens x:100 for small screens
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
@@ -37,15 +37,17 @@ const Projects = () => {
             >
               <h6 className="mb-2 text-neutral-200 font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-300">{project.description}</p>
+              <div className = "flex flex-wrap gap-1">
               {project.technologies.map((tech, index) => (
-                <motion.span
+                <span
                   key={index}
                   // whileHover={{opacity: 0.5 }}
                   className="mr-2 rounded bg-neutral-900 px-2 py-1 font-medium text-sm text-purple-500 hover:bg-purple-500 hover:text-neutral-100"
                 >
                   {tech}
-                </motion.span>
+                </span>
               ))}
+              </div>
             </motion.div>
           </div>
         ))}
